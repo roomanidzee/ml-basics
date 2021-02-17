@@ -1,5 +1,5 @@
-from labs import __version__
+from src import __version__
 
 
 def test_version():
-    assert 2 + 2 == 4
+    assert __version__ == '0.0.1'
