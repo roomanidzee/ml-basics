@@ -1,1 +1,2 @@
 jupyterlab==3.0.9
+ipykernel==5.5.0
