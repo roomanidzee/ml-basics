@@ -1,3 +1,14 @@
+# jupyterlab
 jupyterlab==3.0.9
 ipykernel==5.5.0
+
+# pytest
 pytest==6.2.2
+
+# ml stuff
+numpy==1.20.1
+pandas==1.2.3
+matplotlib==3.3.4
+pillow==8.1.1
+scipy==1.6.1
+mpl-toolkits.clifford==0.0.3
