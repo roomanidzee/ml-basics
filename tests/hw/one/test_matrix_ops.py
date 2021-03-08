@@ -18,16 +18,22 @@ def test_np_mult(matrix_one, matrix_two, matrix_result):
     assert np_mult(np_mat_one, np_mat_two).all() == expected_result.all()
 
 
-def test_stupid_sec_av():
+def test_stupid_sec_av(input_arr, sec_output_arr):
+    assert stupid_sec_av(input_arr) == sec_output_arr
 
-    input_arr = [1, 2, 3, 4 , 5, 6]
-    output_arr = [1, 1.5, 2, 2.5, 3, 3.5]
+def test_sec_av(input_arr, sec_output_arr):
 
-    assert stupid_sec_av(input_arr) == output_arr
-
-def test_sec_av():
-
-    input_arr = np.array([1, 2, 3, 4 , 5, 6])
-    output_arr = np.array([1, 1.5, 2, 2.5, 3, 3.5])
+    input_arr = np.array(input_arr)
+    output_arr = np.array(sec_output_arr)
 
     assert sec_av(input_arr).all() == output_arr.all()
+
+def test_stupid_transformation(transform_input_arr, transform_output_arr):
+    assert stupid_transformation(transform_input_arr) == transform_output_arr
+
+def test_transformation(transform_input_arr, transform_output_arr):
+
+    input_arr = np.array(transform_input_arr)
+    output_arr = np.array(transform_output_arr)
+
+    assert transformation(input_arr).all() == output_arr.all()
